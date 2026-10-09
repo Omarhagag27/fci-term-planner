@@ -1,0 +1,27 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables (NEVER track secrets/passwords)
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+#unimportant files
+inspector.py
+schedule.xlsx
+schedule.json
