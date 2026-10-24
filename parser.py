@@ -97,7 +97,11 @@ def find_groups(ws):
                         c, merged_end(ws, 3, c), 5))
         return out
     # Layout B: department headers in row 4
-    last = max(numeric_cols(ws, 5, FIRST_COL, maxc))
+    cols = numeric_cols(ws, 5, FIRST_COL, maxc)
+    if not cols:
+        return []
+
+    last = max(cols)
     ds = starts(ws, 4, FIRST_COL, maxc)
     return [(year, re.sub(r"\(\d+\)", "", clean(ws.cell(4, c).value)).strip(), c,
              (ds[i + 1] - 1 if i + 1 < len(ds) else last), 5) for i, c in enumerate(ds)]
