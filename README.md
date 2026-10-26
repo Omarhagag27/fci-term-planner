@@ -1,8 +1,8 @@
-# FCI Term Planner
+# Gadwali (جدولي)
 
-A fast, mobile-first timetable viewer and GPA calculator for students of the Faculty of Computers and Information (FCI). Pick your year, group and section, and get your own weekly schedule instead of hunting for it inside a giant spreadsheet.
+A fast, mobile-first timetable viewer and GPA calculator for students of the Faculty of Computers and Information (FCI). *Gadwali* means "my schedule" in Arabic. Pick your year, group and section, and get your own weekly schedule instead of hunting for it inside a giant spreadsheet.
 
-> **مخطط الفصل الدراسي:** اختر الفرقة والمجموعة والسكشن لتحصل على جدولك الأسبوعي فقط، مع حاسبة معدل فصلي وتراكمي. موقع ثابت بدون خادم ولا تسجيل دخول، يعمل على الموبايل والكمبيوتر.
+> **جدولي:** اختر الفرقة والمجموعة والسكشن لتحصل على جدولك الأسبوعي فقط، مع حاسبة معدل فصلي وتراكمي. موقع ثابت بدون خادم ولا تسجيل دخول، يعمل على الموبايل والكمبيوتر.
 
 It is a static site: plain HTML, CSS and JavaScript with no framework and no build step. The data comes from the faculty's Excel timetable, converted once per term into a JSON file by a small Python script.
 
@@ -65,7 +65,7 @@ schedule.xlsx ──► parser.py ──► schedule.json ──► index.html +
 ## Project structure
 
 ```
-fci-term-planner/
+gadwali/
 ├── index.html        Page shell
 ├── css/
 │   └── style.css     Terminal theme, mobile and desktop layouts
@@ -126,7 +126,7 @@ Faculties differ on both the letters and the points. **Check your faculty's byla
 
 1. Push the repo to GitHub.
 2. Go to **Settings → Pages**, choose **Deploy from a branch**, pick `main` and `/ (root)`.
-3. Your site will be served at `https://<username>.github.io/fci-term-planner/`.
+3. Your site will be served at `https://<username>.github.io/gadwali/`.
 
 Any other static host (Netlify, Cloudflare Pages, a plain web server) works the same way.
 
