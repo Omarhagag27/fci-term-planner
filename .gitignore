@@ -22,6 +22,4 @@ dist/
 *.egg-info/
 
 #unimportant files
-inspector.py
-schedule.xlsx
 schedule.json
